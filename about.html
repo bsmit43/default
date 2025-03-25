@@ -1,517 +1,290 @@
-undefined<html lang="en" class="scroll-smooth"><head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="testy - Professional website">
-    <meta name="generator" content="Website Generator">
-    <meta name="theme-color" content="hsl(26, 87%, 40%)">
-    <title>testy - About testy</title>
-    
-    <script src="https://cdn.tailwindcss.com"></script>
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <style>
-        body{font-family:'Poppins', system-ui, sans-serif;overflow-x:hidden;width:100%;max-width:100%;margin:0;padding:0}
-        h1,h2,h3,h4,h5,h6{font-family:'Poppins', sans-serif}
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="test - About test">
+      <title>test - About test</title>
+      <script src="https://cdn.tailwindcss.com"></script>
+      <style>
+        
+        body{font-family:'Manrope', system-ui, sans-serif;overflow-x:hidden;width:100%;max-width:100%;margin:0;padding:0}
+        h1,h2,h3,h4,h5,h6{font-family:'Manrope', sans-serif}
         section,header,footer{width:100vw;max-width:100%;overflow-x:hidden}
         header{background-size:cover;background-position:center;background-repeat:no-repeat;position:relative}
         [data-animate]{opacity:0;transition:opacity .8s ease-out}[data-animate].visible{opacity:1}
         .nav-fixed{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(255,255,255,.9);backdrop-filter:blur(8px);box-shadow:0 1px 3px rgba(0,0,0,.1);transition:all .3s ease;width:100%}
         ::-webkit-scrollbar{width:8px;height:8px}
         ::-webkit-scrollbar-track{background:#f1f1f1}
-        ::-webkit-scrollbar-thumb{background:hsl(26, 87%, 40%);border-radius:4px}
-        ::-webkit-scrollbar-thumb:hover{background:hsl(26, 87%, 30%)}
-        body::before{content:'';position:fixed;top:0;left:0;right:0;height:3px;background:hsl(26, 87%, 40%);transform:scaleX(calc(var(--scroll-progress,0%)/100));transform-origin:left;z-index:1000}
+        ::-webkit-scrollbar-thumb{background:hsl(181, 70%, 40%);border-radius:4px}
+        ::-webkit-scrollbar-thumb:hover{background:hsl(181, 70%, 30%)}
+        body::before{content:'';position:fixed;top:0;left:0;right:0;height:3px;background:hsl(181, 70%, 40%);transform:scaleX(calc(var(--scroll-progress,0%)/100));transform-origin:left;z-index:1000}
         @media print{[data-animate]{opacity:1;transform:none}}
-    </style>
     
-    <script>
-        tailwind.config={theme:{extend:{colors:{primary:{"50":"hsl(26, 87%, 95%)","100":"hsl(26, 87%, 90%)","200":"hsl(26, 87%, 80%)","300":"hsl(26, 87%, 70%)","400":"hsl(26, 87%, 60%)","500":"hsl(26, 87%, 50%)","600":"hsl(26, 87%, 40%)","700":"hsl(26, 87%, 30%)","800":"hsl(26, 87%, 20%)","900":"hsl(26, 87%, 10%)"}},fontFamily:{sans:[''Poppins'','system-ui','sans-serif'],heading:[''Poppins'','sans-serif']}}}}
-    </script>
-</head>
-<body class="antialiased text-gray-800">
-    <main>
-
-
-    <meta charset="UTF-8">
-    <meta name="viewport" c="">
-    <title>About testy - 3D Printing</title>
-    
-    
-    <style>
-        /* Custom Styles to ensure consistency */
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-        }
-
-        .primary-text {
-            color: #008080; /* Teal */
-        }
-
-        .secondary-text {
-            color: #FA8072; /* Coral */
-        }
-
-        .bg-primary {
-            background-color: #008080; /* Teal */
-        }
-
-        .bg-secondary {
-            background-color: #FA8072; /* Coral */
-        }
-
-        .btn-primary {
-            @apply bg-teal-500 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded-lg;
-        }
-
-        .btn-secondary {
-            @apply bg-coral-500 hover:bg-coral-700 text-white font-bold py-2 px-4 rounded-lg;
-        }
-    </style>
-
-
-
-    <!-- Header -->
-    <header class="bg-gradient-to-br from-teal-600 to-teal-800 text-white py-6 shadow-md">
-        <div class="container mx-auto px-4">
+      </style>
+    </head>
+    <body>
+      <nav class="relative py-6 px-4 sm:px-6 lg:px-8" data-animate="fade-down">
             <div class="flex items-center justify-between">
-                <a href="/index.html" class="text-2xl font-bold">testy</a>
-                <nav class="container mx-auto px-6 py-4 flex items-center justify-between">
-        <div class="flex items-center">
-            <a href="/index.html" class="text-2xl font-bold text-teal-600">Testy</a>
-        </div>
-
-        <div class="hidden md:flex items-center space-x-6">
-            <a href="#services" class="text-gray-700 hover:text-teal-600 transition duration-300">Services</a>
-            <a href="#portfolio" class="text-gray-700 hover:text-teal-600 transition duration-300">Portfolio</a>
-            <a href="#about" class="text-gray-700 hover:text-teal-600 transition duration-300">About Us</a>
-            <a href="#contact" class="text-gray-700 hover:text-teal-600 transition duration-300">Contact</a>
-            <a href="#quote" class="bg-teal-500 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300">Get a Quote</a>
-        </div>
-
-        <div class="md:hidden">
-            <button id="mobile-menu-button" class="text-gray-700 hover:text-teal-600 focus:outline-none focus:text-teal-600">
-                <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
-                    <path fill-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"></path>
-                </svg>
-            </button>
-        </div>
-    </nav>
+                <a href="/" class="text-2xl font-bold text-white">
+                    test
+                </a>
+                <div class="hidden md:flex space-x-6">
+                    <a href="#services" class="text-gray-200 hover:text-white transition duration-300">Services</a>
+                    <a href="#about" class="text-gray-200 hover:text-white transition duration-300">About Us</a>
+                    <a href="#team" class="text-gray-200 hover:text-white transition duration-300">Team</a>
+                    <a href="#contact" class="text-gray-200 hover:text-white transition duration-300">Contact</a>
+                </div>
                 <div class="md:hidden">
-                    <button id="mobile-menu-button" class="text-white focus:outline-none focus:ring-2 focus:ring-gray-300">
+                    <button id="mobile-menu-button" class="text-gray-200 hover:text-white focus:outline-none focus:text-white">
                         <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
                         </svg>
                     </button>
                 </div>
             </div>
+
+            <!-- Mobile Menu (Hidden by default) -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4">
+                <a href="#services" class="block py-2 px-4 text-gray-200 hover:text-white transition duration-300">Services</a>
+                <a href="#about" class="block py-2 px-4 text-gray-200 hover:text-white transition duration-300">About Us</a>
+                <a href="#team" class="block py-2 px-4 text-gray-200 hover:text-white transition duration-300">Team</a>
+                <a href="#contact" class="block py-2 px-4 text-gray-200 hover:text-white transition duration-300">Contact</a>
+            </div>
+        </nav>
+      <header class="bg-gradient-to-br from-blue-600 to-blue-800 text-white">
+        <div class="container mx-auto px-4 py-12">
+          <h1 class="text-3xl font-bold">test - About test</h1>
         </div>
-        <!-- Mobile Menu (Hidden by default) -->
-        <div id="mobile-menu" class="hidden bg-teal-700 py-2 px-4">
-            <a href="/index.html" class="block py-1 hover:text-gray-200">Home</a>
-            <a href="/about.html" class="block py-1 hover:text-gray-200">About</a>
-            <a href="/services.html" class="block py-1 hover:text-gray-200">Services</a>
-            <a href="/contact.html" class="block py-1 hover:text-gray-200">Contact</a>
+      </header>
+      <main class="container mx-auto px-4 py-8">
+        Okay, I will create a complete "About" page for the "test" Administrative Services business, ensuring it maintains the same visual style, color scheme, and consistent design elements as the homepage. I will use Tailwind CSS exclusively and focus on responsiveness, accessibility, and high-quality, realistic content.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - test</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .gradient-purple-gold {
+            background: linear-gradient(90deg, rgba(129,51,255,1) 0%, rgba(255,215,0,1) 100%);
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Header (Consistent Across All Pages) -->
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-6 flex items-center justify-between">
+            <a href="/" class="text-2xl font-semibold text-purple-700">test</a>
+            <nav class="hidden md:flex space-x-6">
+                <a href="/" class="text-gray-700 hover:text-purple-700">Home</a>
+                <a href="/about.html" class="text-gray-700 hover:text-purple-700">About</a>
+                <a href="#" class="text-gray-700 hover:text-purple-700">Services</a>
+                <a href="#" class="text-gray-700 hover:text-purple-700">Contact</a>
+            </nav>
+            <button class="md:hidden text-gray-600 focus:outline-none">
+                <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
         </div>
     </header>
 
     <!-- About Us Section -->
-    <section class="py-16 bg-white">
+    <section class="py-16 bg-gray-50">
         <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center primary-text mb-8" data-animate="fade-in">About testy</h2>
+            <h2 class="text-3xl font-semibold text-center text-purple-800 mb-8" data-animate="fade-in">About test</h2>
+
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div>
-                    <img src="/api/placeholder/600/400" alt="testy Team" class="rounded-lg shadow-md" data-animate="slide-in-left">
+                    <img src="/images/g5a06ae79f22671752de7e4e36d159ea5c18049825ecfa56982bb8839d67d70e821a9bd0f094043bcf69882fafeb4c152cd0b6506adca28e33c5a3b1e57418816_640.jpg" alt="test Team" class="rounded-xl shadow-md" data-animate="slide-in-left">
                 </div>
                 <div>
-                    <h3 class="text-2xl font-semibold primary-text mb-4" data-animate="fade-in">Our Story</h3>
-                    <p class="text-gray-700 mb-4" data-animate="fade-in">testy was founded in 2015 by a group of passionate engineers and designers who saw the potential of 3D printing to revolutionize manufacturing and product development. Starting as a small workshop, we quickly grew into a leading provider of 3D printing services, serving clients across various industries.</p>
-                    <p class="text-gray-700 mb-4" data-animate="fade-in">We are committed to providing high-quality 3D printing solutions that meet the unique needs of our clients. Our team of experts works closely with each client to understand their requirements and deliver customized solutions that exceed their expectations.</p>
+                    <h3 class="text-2xl font-semibold text-purple-700 mb-4" data-animate="fade-in">Our Story</h3>
+                    <p class="text-gray-700 leading-relaxed mb-4" data-animate="fade-in">
+                        Founded in 2015 by Sarah Johnson, test began as a small virtual assistant service with a big vision: to empower businesses by handling their administrative burdens, allowing them to focus on growth and innovation.  Sarah, a seasoned executive assistant with over 15 years of experience, recognized the growing need for reliable, efficient, and cost-effective administrative support.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed mb-4" data-animate="fade-in">
+                        Initially serving local startups, test quickly gained a reputation for excellence and expanded its services to include bookkeeping, HR support, and project management.  Our commitment to personalized service and cutting-edge technology has enabled us to build long-lasting relationships with clients across diverse industries.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed" data-animate="fade-in">
+                        Today, test is a leading provider of comprehensive administrative solutions, serving businesses of all sizes. We are proud of our journey and remain dedicated to providing exceptional support that helps our clients thrive.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Mission & Values Section -->
-    <section class="py-16 bg-gray-100">
+    <section class="py-16 bg-white">
         <div class="container mx-auto px-4">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div>
-                    <h3 class="text-2xl font-semibold primary-text mb-4" data-animate="fade-in">Our Mission</h3>
-                    <p class="text-gray-700 mb-4" data-animate="fade-in">To empower businesses and individuals with innovative 3D printing solutions that drive creativity, efficiency, and growth.</p>
-                    <h3 class="text-2xl font-semibold primary-text mb-4" data-animate="fade-in">Our Values</h3>
-                    <ul class="list-disc list-inside text-gray-700" data-animate="fade-in">
-                        <li>Innovation: We constantly explore new technologies and techniques to improve our services.</li>
-                        <li>Quality: We are committed to delivering high-quality 3D printed products that meet the highest standards.</li>
-                        <li>Customer Focus: We prioritize our clients' needs and strive to provide exceptional customer service.</li>
-                        <li>Integrity: We conduct our business with honesty, transparency, and ethical practices.</li>
-                    </ul>
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-semibold text-purple-800 mb-4" data-animate="fade-in">Our Mission & Values</h2>
+                <p class="text-gray-600" data-animate="fade-in">Guiding Principles that Drive Our Success</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-50 rounded-xl shadow-md p-6" data-animate="slide-in-bottom">
+                    <h3 class="text-xl font-semibold text-purple-700 mb-2">Integrity</h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        We uphold the highest standards of honesty, ethics, and transparency in all our interactions.  Trust is the foundation of our relationships with clients and colleagues.
+                    </p>
                 </div>
-                <div>
-                    <img src="/api/placeholder/600/400" alt="Mission and Values" class="rounded-lg shadow-md" data-animate="slide-in-right">
+                <div class="bg-gray-50 rounded-xl shadow-md p-6" data-animate="slide-in-bottom">
+                    <h3 class="text-xl font-semibold text-purple-700 mb-2">Excellence</h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        We strive for excellence in everything we do, continuously improving our processes and delivering exceptional results that exceed expectations.
+                    </p>
+                </div>
+                <div class="bg-gray-50 rounded-xl shadow-md p-6" data-animate="slide-in-bottom">
+                    <h3 class="text-xl font-semibold text-purple-700 mb-2">Client Focus</h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        Our clients are at the heart of everything we do. We listen carefully to their needs and provide tailored solutions that drive their success.
+                    </p>
+                </div>
+                <div class="bg-gray-50 rounded-xl shadow-md p-6" data-animate="slide-in-bottom">
+                    <h3 class="text-xl font-semibold text-purple-700 mb-2">Innovation</h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        We embrace innovation and technology to deliver cutting-edge administrative solutions that streamline processes and improve efficiency.
+                    </p>
+                </div>
+                <div class="bg-gray-50 rounded-xl shadow-md p-6" data-animate="slide-in-bottom">
+                    <h3 class="text-xl font-semibold text-purple-700 mb-2">Collaboration</h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        We believe in the power of collaboration, working together as a team and with our clients to achieve shared goals.
+                    </p>
+                </div>
+                <div class="bg-gray-50 rounded-xl shadow-md p-6" data-animate="slide-in-bottom">
+                    <h3 class="text-xl font-semibold text-purple-700 mb-2">Growth</h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        We are committed to continuous learning and growth, both as individuals and as an organization, to better serve our clients and stay ahead of the curve.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Team Section -->
-    <section class="py-16 bg-white">
+    <section class="py-16 bg-gray-100">
         <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center primary-text mb-8" data-animate="fade-in">Meet Our Team</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Team Member 1 -->
-                <div class="text-center" data-animate="slide-in-up">
-                    <img src="/api/placeholder/300/300" alt="John Doe" class="rounded-full mx-auto mb-4 shadow-md">
-                    <h4 class="text-xl font-semibold primary-text">John Doe</h4>
-                    <p class="text-gray-600">CEO</p>
-                    <p class="text-gray-700">John has over 20 years of experience in manufacturing and technology. He is passionate about using 3D printing to solve complex problems.</p>
+            <h2 class="text-3xl font-semibold text-center text-purple-800 mb-8" data-animate="fade-in">Our Team</h2>
+            <p class="text-gray-600 text-center mb-12" data-animate="fade-in">Meet the dedicated professionals behind test</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white rounded-xl shadow-md p-4 text-center" data-animate="slide-in-bottom">
+                    <img src="/images/150x150_3.jpg" alt="Sarah Johnson" class="rounded-full mx-auto mb-4">
+                    <h3 class="text-xl font-semibold text-purple-700">Sarah Johnson</h3>
+                    <p class="text-gray-500">Founder & CEO</p>
+                    <p class="text-gray-700 mt-2">Visionary leader with a passion for empowering businesses.</p>
                 </div>
-                <!-- Team Member 2 -->
-                <div class="text-center" data-animate="slide-in-up">
-                    <img src="/api/placeholder/300/300" alt="Jane Smith" class="rounded-full mx-auto mb-4 shadow-md">
-                    <h4 class="text-xl font-semibold primary-text">Jane Smith</h4>
-                    <p class="text-gray-600">Lead Designer</p>
-                    <p class="text-gray-700">Jane is a talented designer with expertise in CAD modeling and 3D printing. She is dedicated to creating innovative and functional designs.</p>
+                <div class="bg-white rounded-xl shadow-md p-4 text-center" data-animate="slide-in-bottom">
+                    <img src="/images/150x150_3.jpg" alt="Michael Davis" class="rounded-full mx-auto mb-4">
+                    <h3 class="text-xl font-semibold text-purple-700">Michael Davis</h3>
+                    <p class="text-gray-500">Operations Manager</p>
+                    <p class="text-gray-700 mt-2">Ensuring smooth operations and client satisfaction.</p>
                 </div>
-                <!-- Team Member 3 -->
-                <div class="text-center" data-animate="slide-in-up">
-                    <img src="/api/placeholder/300/300" alt="David Lee" class="rounded-full mx-auto mb-4 shadow-md">
-                    <h4 class="text-xl font-semibold primary-text">David Lee</h4>
-                    <p class="text-gray-600">Production Manager</p>
-                    <p class="text-gray-700">David oversees the production process, ensuring that all 3D printed products meet our high standards for quality and accuracy.</p>
+                <div class="bg-white rounded-xl shadow-md p-4 text-center" data-animate="slide-in-bottom">
+                    <img src="/images/150x150_3.jpg" alt="Emily Carter" class="rounded-full mx-auto mb-4">
+                    <h3 class="text-xl font-semibold text-purple-700">Emily Carter</h3>
+                    <p class="text-gray-500">HR Specialist</p>
+                    <p class="text-gray-700 mt-2">Expert in HR solutions and employee management.</p>
+                </div>
+                <div class="bg-white rounded-xl shadow-md p-4 text-center" data-animate="slide-in-bottom">
+                    <img src="/images/150x150_3.jpg" alt="David Wilson" class="rounded-full mx-auto mb-4">
+                    <h3 class="text-xl font-semibold text-purple-700">David Wilson</h3>
+                    <p class="text-gray-500">Bookkeeping Lead</p>
+                    <p class="text-gray-700 mt-2">Providing accurate and reliable financial support.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Achievements Section -->
-    <section class="py-16 bg-gray-100">
+    <section class="py-16 bg-white">
         <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center primary-text mb-8" data-animate="fade-in">Our Achievements</h2>
+            <h2 class="text-3xl font-semibold text-center text-purple-800 mb-8" data-animate="fade-in">Achievements</h2>
+            <p class="text-gray-600 text-center mb-12" data-animate="fade-in">Celebrating our milestones and successes</p>
+
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Achievement 1 -->
-                <div class="bg-white rounded-lg shadow-md p-6 text-center" data-animate="slide-in-left">
-                    <i class="fas fa-award fa-3x secondary-text mb-4"></i>
-                    <h4 class="text-xl font-semibold primary-text">Industry Recognition</h4>
-                    <p class="text-gray-700">Awarded "3D Printing Company of the Year" by Industry Tech Magazine in 2022.</p>
+                <div class="bg-gray-50 rounded-xl shadow-md p-6 text-center" data-animate="slide-in-bottom">
+                    <div class="text-5xl font-bold text-purple-700 mb-2">500+</div>
+                    <p class="text-gray-700">Clients Served</p>
                 </div>
-                <!-- Achievement 2 -->
-                <div class="bg-white rounded-lg shadow-md p-6 text-center" data-animate="slide-in-up">
-                    <i class="fas fa-users fa-3x secondary-text mb-4"></i>
-                    <h4 class="text-xl font-semibold primary-text">Client Satisfaction</h4>
-                    <p class="text-gray-700">Achieved a 98% client satisfaction rate based on customer feedback surveys.</p>
+                <div class="bg-gray-50 rounded-xl shadow-md p-6 text-center" data-animate="slide-in-bottom">
+                    <div class="text-5xl font-bold text-purple-700 mb-2">98%</div>
+                    <p class="text-gray-700">Client Satisfaction Rate</p>
                 </div>
-                <!-- Achievement 3 -->
-                <div class="bg-white rounded-lg shadow-md p-6 text-center" data-animate="slide-in-right">
-                    <i class="fas fa-rocket fa-3x secondary-text mb-4"></i>
-                    <h4 class="text-xl font-semibold primary-text">Innovation Leadership</h4>
-                    <p class="text-gray-700">Developed and patented a new 3D printing technology that reduces material waste by 30%.</p>
+                <div class="bg-gray-50 rounded-xl shadow-md p-6 text-center" data-animate="slide-in-bottom">
+                    <div class="text-5xl font-bold text-purple-700 mb-2">5+</div>
+                    <p class="text-gray-700">Years in Business</p>
+                </div>
+                <div class="bg-gray-50 rounded-xl shadow-md p-6 text-center" data-animate="slide-in-bottom">
+                    <div class="text-5xl font-bold text-purple-700 mb-2">#1</div>
+                    <p class="text-gray-700">Rated Admin Services Provider</p>
+                </div>
+                <div class="bg-gray-50 rounded-xl shadow-md p-6 text-center" data-animate="slide-in-bottom">
+                    <div class="text-5xl font-bold text-purple-700 mb-2">20+</div>
+                    <p class="text-gray-700">Industry Awards</p>
+                </div>
+                <div class="bg-gray-50 rounded-xl shadow-md p-6 text-center" data-animate="slide-in-bottom">
+                    <div class="text-5xl font-bold text-purple-700 mb-2">100+</div>
+                    <p class="text-gray-700">Dedicated Team Members</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-12 lg:py-16">
-    <div class="container mx-auto px-4">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+    <!-- Footer (Consistent Across All Pages) -->
+    <footer class="bg-gray-800 text-gray-300 py-12">
+        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
             <div>
-                <h3 class="text-xl font-semibold mb-4">Testy 3D Printing</h3>
-                <p class="text-gray-400">Your partner for innovative 3D printing solutions. From prototypes to production, we deliver quality and precision.</p>
-                <div class="flex mt-4 space-x-4">
-                    <a href="#" class="text-gray-400 hover:text-teal-500"><i class="fab fa-facebook-square fa-lg"></i></a>
-                    <a href="#" class="text-gray-400 hover:text-teal-500"><i class="fab fa-twitter-square fa-lg"></i></a>
-                    <a href="#" class="text-gray-400 hover:text-teal-500"><i class="fab fa-instagram-square fa-lg"></i></a>
-                    <a href="#" class="text-gray-400 hover:text-teal-500"><i class="fab fa-linkedin fa-lg"></i></a>
+                <h4 class="text-lg font-semibold mb-4">test</h4>
+                <p>Your trusted partner for administrative solutions.</p>
+                <div class="mt-4">
+                    <a href="#" class="hover:text-purple-500 mr-2"><i class="fab fa-facebook-square fa-lg"></i></a>
+                    <a href="#" class="hover:text-purple-500 mr-2"><i class="fab fa-twitter-square fa-lg"></i></a>
+                    <a href="#" class="hover:text-purple-500 mr-2"><i class="fab fa-linkedin fa-lg"></i></a>
                 </div>
             </div>
 
             <div>
-                <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
-                <ul class="list-none pl-0">
-                    <li class="mb-2"><a href="#" class="text-gray-400 hover:text-teal-500">About Us</a></li>
-                    <li class="mb-2"><a href="#" class="text-gray-400 hover:text-teal-500">Services</a></li>
-                    <li class="mb-2"><a href="#" class="text-gray-400 hover:text-teal-500">Projects</a></li>
-                    <li class="mb-2"><a href="#" class="text-gray-400 hover:text-teal-500">Contact Us</a></li>
-                    <li class="mb-2"><a href="#" class="text-gray-400 hover:text-teal-500">Request a Quote</a></li>
+                <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                <ul>
+                    <li><a href="/" class="hover:text-purple-500">Home</a></li>
+                    <li><a href="/about.html" class="hover:text-purple-500">About Us</a></li>
+                    <li><a href="#" class="hover:text-purple-500">Services</a></li>
+                    <li><a href="#" class="hover:text-purple-500">Contact Us</a></li>
                 </ul>
             </div>
 
             <div>
-                <h3 class="text-xl font-semibold mb-4">Services</h3>
-                <ul class="list-none pl-0">
-                    <li class="mb-2"><a href="#" class="text-gray-400 hover:text-teal-500">Prototyping</a></li>
-                    <li class="mb-2"><a href="#" class="text-gray-400 hover:text-teal-500">3D Printing</a></li>
-                    <li class="mb-2"><a href="#" class="text-gray-400 hover:text-teal-500">Design &amp; Engineering</a></li>
-                    <li class="mb-2"><a href="#" class="text-gray-400 hover:text-teal-500">Material Selection</a></li>
-                    <li class="mb-2"><a href="#" class="text-gray-400 hover:text-teal-500">Post-Processing</a></li>
+                <h4 class="text-lg font-semibold mb-4">Services</h4>
+                <ul>
+                    <li><a href="#" class="hover:text-purple-500">Virtual Assistant</a></li>
+                    <li><a href="#" class="hover:text-purple-500">Bookkeeping</a></li>
+                    <li><a href="#" class="hover:text-purple-500">HR Support</a></li>
+                    <li><a href="#" class="hover:text-purple-500">Project Management</a></li>
                 </ul>
             </div>
 
             <div>
-                <h3 class="text-xl font-semibold mb-4">Contact Information</h3>
-                <p class="text-gray-400 mb-2">Address: 123 Innovation Street, Anytown, USA</p>
-                <p class="text-gray-400 mb-2">Phone: (555) 123-4567</p>
-                <p class="text-gray-400 mb-2">Email: info@testy3dprinting.com</p>
-                <p class="text-gray-400">Business Hours: Mon-Fri, 9am-5pm</p>
+                <h4 class="text-lg font-semibold mb-4">Contact Us</h4>
+                <p>123 Main Street, Anytown, USA</p>
+                <p>Email: info@test.com</p>
+                <p>Phone: (555) 123-4567</p>
             </div>
         </div>
-
-        <div class="mt-8 border-t border-gray-700 pt-8 text-center text-gray-400">
-            © 2024 Testy 3D Printing. All rights reserved.
-        </div>
-    </div>
-</footer>
-
-    
-
-</main>
-    
-    <script>
-        document.addEventListener('DOMContentLoaded',function(){
-            // Animation system
-            const observer=new IntersectionObserver(entries=>{
-                entries.forEach((entry,i)=>{
-                    if(entry.isIntersecting){
-                        setTimeout(()=>{
-                            entry.target.classList.add('visible');
-                            // Handle staggered children if using that animation style
-                            if(entry.target.getAttribute('data-animate')==='stagger'){
-                                Array.from(entry.target.children).forEach((child,childIndex)=>{
-                                    child.style.setProperty('--child-index',childIndex);
-                                });
-                            }
-                        },i*100);
-                        observer.unobserve(entry.target);
-                    }
-                });
-            },{threshold:0.15,rootMargin:'0px 0px -100px 0px'});
-            
-            document.querySelectorAll('[data-animate]').forEach(el=>observer.observe(el));
-            
-            // Fixed navigation
-            const nav=document.querySelector('nav');
-            if(nav){
-                const handleScroll=()=>{
-                    nav.classList[window.scrollY>100?'add':'remove']('nav-fixed');
-                };
-                window.addEventListener('scroll',handleScroll,{passive:true});
-                handleScroll();
-            }
-            
-            // Smooth scroll
-            document.querySelectorAll('a[href^="#"]').forEach(anchor=>{
-                anchor.addEventListener('click',function(e){
-                    e.preventDefault();
-                    const targetId=this.getAttribute('href');
-                    if(targetId==='#')return;
-                    const target=document.querySelector(targetId);
-                    if(target){
-                        const targetPosition=target.getBoundingClientRect().top+window.pageYOffset-(nav?nav.offsetHeight:0)-20;
-                        window.scrollTo({top:targetPosition,behavior:'smooth'});
-                    }
-                });
-            });
-            
-            // Scroll progress indicator
-            const height=Math.max(
-                document.body.scrollHeight,
-                document.body.offsetHeight,
-                document.documentElement.clientHeight,
-                document.documentElement.scrollHeight,
-                document.documentElement.offsetHeight
-            )-window.innerHeight;
-            
-            window.addEventListener('scroll',()=>{
-                document.documentElement.style.setProperty('--scroll-progress',(window.scrollY/height*100)+'%');
-            },{passive:true});
-            
-            // Mobile menu
-            const menuToggle=document.getElementById('mobile-menu-toggle');
-            const mobileMenu=document.getElementById('mobile-menu');
-            if(menuToggle&&mobileMenu){
-                menuToggle.addEventListener('click',()=>{
-                    mobileMenu.classList.toggle('hidden');
-                    document.body.classList.toggle('overflow-hidden');
-                });
-                document.addEventListener('click',e=>{
-                    if(mobileMenu&&!mobileMenu.classList.contains('hidden')&&
-                        menuToggle&&!menuToggle.contains(e.target)&&!mobileMenu.contains(e.target)){
-                        mobileMenu.classList.add('hidden');
-                        document.body.classList.remove('overflow-hidden');
-                    }
-                });
-            }
-            
-            // Accordions
-            document.querySelectorAll('[data-accordion-target]').forEach(btn=>{
-                btn.addEventListener('click',()=>{
-                    const target=document.querySelector(btn.getAttribute('data-accordion-target'));
-                    if(target){
-                        const isExpanded=btn.getAttribute('aria-expanded')==='true';
-                        target.classList.toggle('hidden');
-                        btn.setAttribute('aria-expanded',isExpanded?'false':'true');
-                        const icon=btn.querySelector('.accordion-icon');
-                        if(icon)icon.classList.toggle('rotate-180');
-                    }
-                });
-            });
-            
-            // Form validation (optional enhancement)
-            document.querySelectorAll('form').forEach(form=>{
-                form.addEventListener('submit',function(e){
-                    let valid=true;
-                    const requiredFields=form.querySelectorAll('[required]');
-                    
-                    requiredFields.forEach(field=>{
-                        if(!field.value.trim()){
-                            valid=false;
-                            field.classList.add('border-red-500');
-                            
-                            // Add error message if not already present
-                            let errorMsg=field.parentNode.querySelector('.error-message');
-                            if(!errorMsg){
-                                errorMsg=document.createElement('p');
-                                errorMsg.className='text-red-500 text-sm mt-1 error-message';
-                                errorMsg.textContent='This field is required';
-                                field.parentNode.appendChild(errorMsg);
-                            }
-                        }else{
-                            field.classList.remove('border-red-500');
-                            const errorMsg=field.parentNode.querySelector('.error-message');
-                            if(errorMsg)errorMsg.remove();
-                        }
-                    });
-                    
-                    if(!valid){
-                        e.preventDefault();
-                    }
-                });
-            });
-            
-            // Tabs functionality if present
-            document.querySelectorAll('[data-tabs]').forEach(tabGroup=>{
-                const tabs=tabGroup.querySelectorAll('[data-tab]');
-                const tabContents=document.querySelectorAll('[data-tab-content]');
-                
-                tabs.forEach(tab=>{
-                    tab.addEventListener('click',()=>{
-                        const target=tab.getAttribute('data-tab');
-                        
-                        // Update active tab state
-                        tabs.forEach(t=>t.classList.remove('active-tab','text-primary-600','border-primary-600'));
-                        tab.classList.add('active-tab','text-primary-600','border-primary-600');
-                        
-                        // Show correct content
-                        tabContents.forEach(content=>{
-                            if(content.getAttribute('data-tab-content')===target){
-                                content.classList.remove('hidden');
-                            }else{
-                                content.classList.add('hidden');
-                            }
-                        });
-                    });
-                });
-            });
-            
-            // Carousels
-            document.querySelectorAll('[data-carousel]').forEach(carousel=>{
-                const slides=carousel.querySelectorAll('[data-slide]');
-                const prevBtn=carousel.querySelector('[data-carousel-prev]');
-                const nextBtn=carousel.querySelector('[data-carousel-next]');
-                
-                if(slides.length>0&&prevBtn&&nextBtn){
-                    let current=0,interval=null;
-                    
-                    slides[0].classList.remove('hidden');
-                    
-                    const updateIndicators=()=>{
-                        carousel.querySelectorAll('[data-indicator]').forEach((ind,i)=>{
-                            ind.classList[i===current?'add':'remove']('bg-primary-600');
-                            ind.classList[i!==current?'add':'remove']('bg-gray-300');
-                        });
-                    };
-                    
-                    const showSlide=idx=>{
-                        slides.forEach(s=>s.classList.add('hidden'));
-                        slides[idx].classList.remove('hidden');
-                        updateIndicators();
-                    };
-                    
-                    nextBtn.addEventListener('click',()=>{
-                        current=(current+1)%slides.length;
-                        showSlide(current);
-                    });
-                    
-                    prevBtn.addEventListener('click',()=>{
-                        current=(current-1+slides.length)%slides.length;
-                        showSlide(current);
-                    });
-                    
-                    updateIndicators();
-                    
-                    const startAuto=()=>{
-                        if(carousel.hasAttribute('data-auto')&&!interval){
-                            interval=setInterval(()=>{
-                                current=(current+1)%slides.length;
-                                showSlide(current);
-                            },5000);
-                        }
-                    };
-                    
-                    carousel.addEventListener('mouseenter',()=>{
-                        if(interval){clearInterval(interval);interval=null;}
-                    });
-                    
-                    carousel.addEventListener('mouseleave',startAuto);
-                    
-                    carousel.querySelectorAll('[data-indicator]').forEach((ind,i)=>{
-                        ind.addEventListener('click',()=>{
-                            current=i;
-                            showSlide(current);
-                        });
-                    });
-                    
-                    startAuto();
-                }
-            });
-            
-            // Initialize counters for stats sections if they exist
-            document.querySelectorAll('[data-counter]').forEach(counter=>{
-                const target=parseInt(counter.getAttribute('data-counter')||'0',10);
-                const duration=1500; // Animation duration in ms
-                const step=Math.ceil(target/50); // How much to increment per step
-                let current=0;
-                
-                const updateCounter=()=>{
-                    current+=step;
-                    if(current>target)current=target;
-                    
-                    counter.textContent=current.toString().replace(/B(?=(d{3})+(?!d))/g,',');
-                    
-                    if(current<target){
-                        requestAnimationFrame(updateCounter);
-                    }
-                };
-                
-                // Start counting when element is in view
-                const observer=new IntersectionObserver(entries=>{
-                    entries.forEach(entry=>{
-                        if(entry.isIntersecting){
-                            updateCounter();
-                            observer.unobserve(entry.target);
-                        }
-                    });
-                },{threshold:0.5});
-                
-                observer.observe(counter);
-            });
-        });
-    </script>
-
-</body></html>
+        <div class="text-center mt-8">
+            <p>&copy; 2
+      </main>
+      
+    </body>
+    </html>
