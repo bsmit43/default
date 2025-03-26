@@ -8,282 +8,265 @@
       <script src="https://cdn.tailwindcss.com"></script>
       <style>
         
-        body{font-family:'Manrope', system-ui, sans-serif;overflow-x:hidden;width:100%;max-width:100%;margin:0;padding:0}
-        h1,h2,h3,h4,h5,h6{font-family:'Manrope', sans-serif}
+        body{font-family:'Poppins', system-ui, sans-serif;overflow-x:hidden;width:100%;max-width:100%;margin:0;padding:0}
+        h1,h2,h3,h4,h5,h6{font-family:'Poppins', sans-serif}
         section,header,footer{width:100vw;max-width:100%;overflow-x:hidden}
         header{background-size:cover;background-position:center;background-repeat:no-repeat;position:relative}
         [data-animate]{opacity:0;transition:opacity .8s ease-out}[data-animate].visible{opacity:1}
         .nav-fixed{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(255,255,255,.9);backdrop-filter:blur(8px);box-shadow:0 1px 3px rgba(0,0,0,.1);transition:all .3s ease;width:100%}
         ::-webkit-scrollbar{width:8px;height:8px}
         ::-webkit-scrollbar-track{background:#f1f1f1}
-        ::-webkit-scrollbar-thumb{background:hsl(181, 70%, 40%);border-radius:4px}
-        ::-webkit-scrollbar-thumb:hover{background:hsl(181, 70%, 30%)}
-        body::before{content:'';position:fixed;top:0;left:0;right:0;height:3px;background:hsl(181, 70%, 40%);transform:scaleX(calc(var(--scroll-progress,0%)/100));transform-origin:left;z-index:1000}
+        ::-webkit-scrollbar-thumb{background:hsl(57, 89%, 40%);border-radius:4px}
+        ::-webkit-scrollbar-thumb:hover{background:hsl(57, 89%, 30%)}
+        body::before{content:'';position:fixed;top:0;left:0;right:0;height:3px;background:hsl(57, 89%, 40%);transform:scaleX(calc(var(--scroll-progress,0%)/100));transform-origin:left;z-index:1000}
         @media print{[data-animate]{opacity:1;transform:none}}
     
       </style>
     </head>
     <body>
-      <nav class="relative py-6 px-4 sm:px-6 lg:px-8" data-animate="fade-down">
-            <div class="flex items-center justify-between">
-                <a href="/" class="text-2xl font-bold text-white">
-                    test
-                </a>
-                <div class="hidden md:flex space-x-6">
-                    <a href="#services" class="text-gray-200 hover:text-white transition duration-300">Services</a>
-                    <a href="#about" class="text-gray-200 hover:text-white transition duration-300">About Us</a>
-                    <a href="#team" class="text-gray-200 hover:text-white transition duration-300">Team</a>
-                    <a href="#contact" class="text-gray-200 hover:text-white transition duration-300">Contact</a>
-                </div>
-                <div class="md:hidden">
-                    <button id="mobile-menu-button" class="text-gray-200 hover:text-white focus:outline-none focus:text-white">
-                        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                        </svg>
-                    </button>
-                </div>
-            </div>
-
-            <!-- Mobile Menu (Hidden by default) -->
-            <div id="mobile-menu" class="hidden md:hidden mt-4">
-                <a href="#services" class="block py-2 px-4 text-gray-200 hover:text-white transition duration-300">Services</a>
-                <a href="#about" class="block py-2 px-4 text-gray-200 hover:text-white transition duration-300">About Us</a>
-                <a href="#team" class="block py-2 px-4 text-gray-200 hover:text-white transition duration-300">Team</a>
-                <a href="#contact" class="block py-2 px-4 text-gray-200 hover:text-white transition duration-300">Contact</a>
-            </div>
-        </nav>
+      <nav class="relative max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6" aria-label="Global">
+      <div class="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
+        <div class="flex items-center justify-between w-full md:w-auto">
+          <a href="#" class="flex items-center">
+            <img class="h-8 w-auto sm:h-10" src="/api/placeholder/40/40" alt="Test Logo">
+            <span class="ml-2 font-bold text-purple-700 text-lg">Test</span>
+          </a>
+          <div class="-mr-2 flex items-center md:hidden">
+            <button type="button" class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-purple-500" aria-expanded="false">
+              <span class="sr-only">Open main menu</span>
+              <!-- Heroicon name: outline/menu -->
+              <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
+        <a href="#" class="font-medium text-gray-500 hover:text-gray-900">Solutions</a>
+        <a href="#" class="font-medium text-gray-500 hover:text-gray-900">Pricing</a>
+        <a href="#" class="font-medium text-gray-500 hover:text-gray-900">Docs</a>
+        <a href="#" class="font-medium text-gray-500 hover:text-gray-900">More</a>
+        <a href="#" class="font-medium text-purple-600 hover:text-purple-500">Log in</a>
+      </div>
+    </nav>
       <header class="bg-gradient-to-br from-blue-600 to-blue-800 text-white">
         <div class="container mx-auto px-4 py-12">
           <h1 class="text-3xl font-bold">test - About test</h1>
         </div>
       </header>
       <main class="container mx-auto px-4 py-8">
-        Okay, I will create a complete "About" page for the "test" Administrative Services business, ensuring it maintains the same visual style, color scheme, and consistent design elements as the homepage. I will use Tailwind CSS exclusively and focus on responsiveness, accessibility, and high-quality, realistic content.
-
-```html
-<!DOCTYPE html>
+        <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - test</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>About Us - test Administrative Services</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" integrity="sha512-wnea99Gp3IojP5h6zD8uHYJAckwFX0FvP+IcREozc6Ywys8HTvwSUknlsZcLp9WuDYvEJehMRes5t7/y3VLlVQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
-        body {
-            font-family: 'Poppins', sans-serif;
+        /* Custom Styles - To ensure consistency with the homepage */
+        .bg-gradient-custom {
+            background: linear-gradient(to right, #6b46c1, #a78bfa); /* Purple gradient */
         }
-        .gradient-purple-gold {
-            background: linear-gradient(90deg, rgba(129,51,255,1) 0%, rgba(255,215,0,1) 100%);
+        .text-gold {
+            color: #D4AF37; /* Gold accent color */
+        }
+        .border-gold {
+            border-color: #D4AF37;
         }
     </style>
 </head>
-<body class="bg-gray-100">
+<body class="bg-gray-100 font-sans">
 
-    <!-- Header (Consistent Across All Pages) -->
-    <header class="bg-white shadow-md">
-        <div class="container mx-auto px-4 py-6 flex items-center justify-between">
-            <a href="/" class="text-2xl font-semibold text-purple-700">test</a>
-            <nav class="hidden md:flex space-x-6">
-                <a href="/" class="text-gray-700 hover:text-purple-700">Home</a>
-                <a href="/about.html" class="text-gray-700 hover:text-purple-700">About</a>
-                <a href="#" class="text-gray-700 hover:text-purple-700">Services</a>
-                <a href="#" class="text-gray-700 hover:text-purple-700">Contact</a>
-            </nav>
-            <button class="md:hidden text-gray-600 focus:outline-none">
-                <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
-            </button>
+    <!-- Header (Consistent with Homepage) -->
+    <header class="bg-gradient-custom text-white py-4 shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between">
+                <a href="/" class="text-2xl font-bold">test</a>
+                <nav class="hidden md:flex space-x-6">
+                    <a href="/" class="hover:text-gold">Home</a>
+                    <a href="/about" class="hover:text-gold">About Us</a>
+                    <a href="#" class="hover:text-gold">Services</a>
+                    <a href="#" class="hover:text-gold">Contact</a>
+                </nav>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-white focus:outline-none">
+                        <i class="fas fa-bars fa-lg"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="hidden bg-gradient-custom py-2 px-4">
+            <a href="/" class="block py-1 hover:text-gold">Home</a>
+            <a href="/about" class="block py-1 hover:text-gold">About Us</a>
+            <a href="#" class="block py-1 hover:text-gold">Services</a>
+            <a href="#" class="block py-1 hover:text-gold">Contact</a>
         </div>
     </header>
 
     <!-- About Us Section -->
-    <section class="py-16 bg-gray-50">
+    <section class="py-16">
         <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-semibold text-center text-purple-800 mb-8" data-animate="fade-in">About test</h2>
-
+            <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center" data-animate="fade-in">About test</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div>
-                    <img src="/images/g5a06ae79f22671752de7e4e36d159ea5c18049825ecfa56982bb8839d67d70e821a9bd0f094043bcf69882fafeb4c152cd0b6506adca28e33c5a3b1e57418816_640.jpg" alt="test Team" class="rounded-xl shadow-md" data-animate="slide-in-left">
+                    <img src="/images/g4037128ee71fe17573ae8d07a34580560999d27785e72d38edfd6ae351d84020017f88a3cae07a53e8e25cdb7be3239c6c5ec000a380450dcb041fd997acb9f5_640.jpg" alt="Office Interior" class="rounded-lg shadow-md" data-animate="slide-left">
                 </div>
                 <div>
-                    <h3 class="text-2xl font-semibold text-purple-700 mb-4" data-animate="fade-in">Our Story</h3>
-                    <p class="text-gray-700 leading-relaxed mb-4" data-animate="fade-in">
-                        Founded in 2015 by Sarah Johnson, test began as a small virtual assistant service with a big vision: to empower businesses by handling their administrative burdens, allowing them to focus on growth and innovation.  Sarah, a seasoned executive assistant with over 15 years of experience, recognized the growing need for reliable, efficient, and cost-effective administrative support.
+                    <h3 class="text-2xl font-semibold text-gray-700 mb-4" data-animate="fade-in">Our Story</h3>
+                    <p class="text-gray-600 leading-relaxed mb-4" data-animate="fade-in">
+                        Founded in 2010, test began as a small team of dedicated administrative professionals with a vision to streamline business operations for companies of all sizes.  We recognized a growing need for reliable, efficient, and cost-effective administrative support, allowing businesses to focus on their core competencies.  Over the years, we've grown from a local startup to a trusted partner for numerous businesses across various industries.  Our commitment to excellence and client satisfaction has been the cornerstone of our success.
                     </p>
-                    <p class="text-gray-700 leading-relaxed mb-4" data-animate="fade-in">
-                        Initially serving local startups, test quickly gained a reputation for excellence and expanded its services to include bookkeeping, HR support, and project management.  Our commitment to personalized service and cutting-edge technology has enabled us to build long-lasting relationships with clients across diverse industries.
-                    </p>
-                    <p class="text-gray-700 leading-relaxed" data-animate="fade-in">
-                        Today, test is a leading provider of comprehensive administrative solutions, serving businesses of all sizes. We are proud of our journey and remain dedicated to providing exceptional support that helps our clients thrive.
+                    <h3 class="text-2xl font-semibold text-gray-700 mb-4" data-animate="fade-in">Our Mission</h3>
+                    <p class="text-gray-600 leading-relaxed" data-animate="fade-in">
+                        Our mission is to empower businesses by providing exceptional administrative services that enhance efficiency, reduce costs, and foster growth. We strive to be a reliable extension of our clients' teams, enabling them to focus on their strategic goals.
                     </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Mission & Values Section -->
-    <section class="py-16 bg-white">
+    <!-- Values Section -->
+    <section class="py-16 bg-gray-50">
         <div class="container mx-auto px-4">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl font-semibold text-purple-800 mb-4" data-animate="fade-in">Our Mission & Values</h2>
-                <p class="text-gray-600" data-animate="fade-in">Guiding Principles that Drive Our Success</p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-gray-50 rounded-xl shadow-md p-6" data-animate="slide-in-bottom">
-                    <h3 class="text-xl font-semibold text-purple-700 mb-2">Integrity</h3>
-                    <p class="text-gray-700 leading-relaxed">
-                        We uphold the highest standards of honesty, ethics, and transparency in all our interactions.  Trust is the foundation of our relationships with clients and colleagues.
-                    </p>
+            <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center" data-animate="fade-in">Our Core Values</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-md p-6" data-animate="slide-up">
+                    <i class="fas fa-check-circle text-3xl text-gold mb-4"></i>
+                    <h3 class="text-xl font-semibold text-gray-700 mb-2">Excellence</h3>
+                    <p class="text-gray-600 leading-relaxed">We are committed to delivering the highest quality administrative services and exceeding client expectations.</p>
                 </div>
-                <div class="bg-gray-50 rounded-xl shadow-md p-6" data-animate="slide-in-bottom">
-                    <h3 class="text-xl font-semibold text-purple-700 mb-2">Excellence</h3>
-                    <p class="text-gray-700 leading-relaxed">
-                        We strive for excellence in everything we do, continuously improving our processes and delivering exceptional results that exceed expectations.
-                    </p>
+                <div class="bg-white rounded-lg shadow-md p-6" data-animate="slide-up" data-animation-delay="200">
+                    <i class="fas fa-users text-3xl text-gold mb-4"></i>
+                    <h3 class="text-xl font-semibold text-gray-700 mb-2">Client Focus</h3>
+                    <p class="text-gray-600 leading-relaxed">We prioritize our clients' needs and strive to build long-term partnerships based on trust and mutual success.</p>
                 </div>
-                <div class="bg-gray-50 rounded-xl shadow-md p-6" data-animate="slide-in-bottom">
-                    <h3 class="text-xl font-semibold text-purple-700 mb-2">Client Focus</h3>
-                    <p class="text-gray-700 leading-relaxed">
-                        Our clients are at the heart of everything we do. We listen carefully to their needs and provide tailored solutions that drive their success.
-                    </p>
-                </div>
-                <div class="bg-gray-50 rounded-xl shadow-md p-6" data-animate="slide-in-bottom">
-                    <h3 class="text-xl font-semibold text-purple-700 mb-2">Innovation</h3>
-                    <p class="text-gray-700 leading-relaxed">
-                        We embrace innovation and technology to deliver cutting-edge administrative solutions that streamline processes and improve efficiency.
-                    </p>
-                </div>
-                <div class="bg-gray-50 rounded-xl shadow-md p-6" data-animate="slide-in-bottom">
-                    <h3 class="text-xl font-semibold text-purple-700 mb-2">Collaboration</h3>
-                    <p class="text-gray-700 leading-relaxed">
-                        We believe in the power of collaboration, working together as a team and with our clients to achieve shared goals.
-                    </p>
-                </div>
-                <div class="bg-gray-50 rounded-xl shadow-md p-6" data-animate="slide-in-bottom">
-                    <h3 class="text-xl font-semibold text-purple-700 mb-2">Growth</h3>
-                    <p class="text-gray-700 leading-relaxed">
-                        We are committed to continuous learning and growth, both as individuals and as an organization, to better serve our clients and stay ahead of the curve.
-                    </p>
+                <div class="bg-white rounded-lg shadow-md p-6" data-animate="slide-up" data-animation-delay="400">
+                    <i class="fas fa-lightbulb text-3xl text-gold mb-4"></i>
+                    <h3 class="text-xl font-semibold text-gray-700 mb-2">Innovation</h3>
+                    <p class="text-gray-600 leading-relaxed">We embrace innovation and continuously seek new ways to improve our services and deliver greater value to our clients.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Team Section -->
-    <section class="py-16 bg-gray-100">
+    <section class="py-16">
         <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-semibold text-center text-purple-800 mb-8" data-animate="fade-in">Our Team</h2>
-            <p class="text-gray-600 text-center mb-12" data-animate="fade-in">Meet the dedicated professionals behind test</p>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <div class="bg-white rounded-xl shadow-md p-4 text-center" data-animate="slide-in-bottom">
-                    <img src="/images/150x150_3.jpg" alt="Sarah Johnson" class="rounded-full mx-auto mb-4">
-                    <h3 class="text-xl font-semibold text-purple-700">Sarah Johnson</h3>
-                    <p class="text-gray-500">Founder & CEO</p>
-                    <p class="text-gray-700 mt-2">Visionary leader with a passion for empowering businesses.</p>
+            <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center" data-animate="fade-in">Meet Our Team</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-md p-4" data-animate="slide-up">
+                    <img src="/api/placeholder/300/300" alt="Team Member 1" class="rounded-full mx-auto mb-4">
+                    <h3 class="text-xl font-semibold text-gray-700 mb-2 text-center">Alice Johnson</h3>
+                    <p class="text-gray-600 text-center">CEO</p>
+                    <p class="text-gray-600 text-center">Alice brings over 20 years of experience in business administration and strategic leadership.</p>
                 </div>
-                <div class="bg-white rounded-xl shadow-md p-4 text-center" data-animate="slide-in-bottom">
-                    <img src="/images/150x150_3.jpg" alt="Michael Davis" class="rounded-full mx-auto mb-4">
-                    <h3 class="text-xl font-semibold text-purple-700">Michael Davis</h3>
-                    <p class="text-gray-500">Operations Manager</p>
-                    <p class="text-gray-700 mt-2">Ensuring smooth operations and client satisfaction.</p>
+                <div class="bg-white rounded-lg shadow-md p-4" data-animate="slide-up" data-animation-delay="200">
+                    <img src="/api/placeholder/300/300" alt="Team Member 2" class="rounded-full mx-auto mb-4">
+                    <h3 class="text-xl font-semibold text-gray-700 mb-2 text-center">Bob Williams</h3>
+                    <p class="text-gray-600 text-center">Operations Manager</p>
+                    <p class="text-gray-600 text-center">Bob is responsible for overseeing the day-to-day operations and ensuring client satisfaction.</p>
                 </div>
-                <div class="bg-white rounded-xl shadow-md p-4 text-center" data-animate="slide-in-bottom">
-                    <img src="/images/150x150_3.jpg" alt="Emily Carter" class="rounded-full mx-auto mb-4">
-                    <h3 class="text-xl font-semibold text-purple-700">Emily Carter</h3>
-                    <p class="text-gray-500">HR Specialist</p>
-                    <p class="text-gray-700 mt-2">Expert in HR solutions and employee management.</p>
-                </div>
-                <div class="bg-white rounded-xl shadow-md p-4 text-center" data-animate="slide-in-bottom">
-                    <img src="/images/150x150_3.jpg" alt="David Wilson" class="rounded-full mx-auto mb-4">
-                    <h3 class="text-xl font-semibold text-purple-700">David Wilson</h3>
-                    <p class="text-gray-500">Bookkeeping Lead</p>
-                    <p class="text-gray-700 mt-2">Providing accurate and reliable financial support.</p>
+                <div class="bg-white rounded-lg shadow-md p-4" data-animate="slide-up" data-animation-delay="400">
+                    <img src="/api/placeholder/300/300" alt="Team Member 3" class="rounded-full mx-auto mb-4">
+                    <h3 class="text-xl font-semibold text-gray-700 mb-2 text-center">Carol Davis</h3>
+                    <p class="text-gray-600 text-center">Client Relations Manager</p>
+                    <p class="text-gray-600 text-center">Carol is dedicated to building strong relationships with our clients and providing exceptional support.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Achievements Section -->
-    <section class="py-16 bg-white">
+    <section class="py-16 bg-gray-50">
         <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-semibold text-center text-purple-800 mb-8" data-animate="fade-in">Achievements</h2>
-            <p class="text-gray-600 text-center mb-12" data-animate="fade-in">Celebrating our milestones and successes</p>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-gray-50 rounded-xl shadow-md p-6 text-center" data-animate="slide-in-bottom">
-                    <div class="text-5xl font-bold text-purple-700 mb-2">500+</div>
-                    <p class="text-gray-700">Clients Served</p>
+            <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center" data-animate="fade-in">Our Achievements</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white rounded-lg shadow-md p-6" data-animate="slide-left">
+                    <i class="fas fa-trophy text-3xl text-gold mb-4"></i>
+                    <h3 class="text-xl font-semibold text-gray-700 mb-2">Industry Recognition</h3>
+                    <p class="text-gray-600 leading-relaxed">Awarded "Top Administrative Services Provider" by Business Today Magazine in 2022 and 2023.</p>
                 </div>
-                <div class="bg-gray-50 rounded-xl shadow-md p-6 text-center" data-animate="slide-in-bottom">
-                    <div class="text-5xl font-bold text-purple-700 mb-2">98%</div>
-                    <p class="text-gray-700">Client Satisfaction Rate</p>
-                </div>
-                <div class="bg-gray-50 rounded-xl shadow-md p-6 text-center" data-animate="slide-in-bottom">
-                    <div class="text-5xl font-bold text-purple-700 mb-2">5+</div>
-                    <p class="text-gray-700">Years in Business</p>
-                </div>
-                <div class="bg-gray-50 rounded-xl shadow-md p-6 text-center" data-animate="slide-in-bottom">
-                    <div class="text-5xl font-bold text-purple-700 mb-2">#1</div>
-                    <p class="text-gray-700">Rated Admin Services Provider</p>
-                </div>
-                <div class="bg-gray-50 rounded-xl shadow-md p-6 text-center" data-animate="slide-in-bottom">
-                    <div class="text-5xl font-bold text-purple-700 mb-2">20+</div>
-                    <p class="text-gray-700">Industry Awards</p>
-                </div>
-                <div class="bg-gray-50 rounded-xl shadow-md p-6 text-center" data-animate="slide-in-bottom">
-                    <div class="text-5xl font-bold text-purple-700 mb-2">100+</div>
-                    <p class="text-gray-700">Dedicated Team Members</p>
+                <div class="bg-white rounded-lg shadow-md p-6" data-animate="slide-right">
+                    <i class="fas fa-chart-line text-3xl text-gold mb-4"></i>
+                    <h3 class="text-xl font-semibold text-gray-700 mb-2">Client Growth</h3>
+                    <p class="text-gray-600 leading-relaxed">Helped over 200 businesses streamline their operations and achieve significant cost savings.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer (Consistent Across All Pages) -->
-    <footer class="bg-gray-800 text-gray-300 py-12">
-        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
+    <!-- Footer (Consistent with Homepage) -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
-                <h4 class="text-lg font-semibold mb-4">test</h4>
+                <h4 class="text-xl font-semibold mb-4">test</h4>
                 <p>Your trusted partner for administrative solutions.</p>
-                <div class="mt-4">
-                    <a href="#" class="hover:text-purple-500 mr-2"><i class="fab fa-facebook-square fa-lg"></i></a>
-                    <a href="#" class="hover:text-purple-500 mr-2"><i class="fab fa-twitter-square fa-lg"></i></a>
-                    <a href="#" class="hover:text-purple-500 mr-2"><i class="fab fa-linkedin fa-lg"></i></a>
-                </div>
-            </div>
-
-            <div>
-                <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
-                <ul>
-                    <li><a href="/" class="hover:text-purple-500">Home</a></li>
-                    <li><a href="/about.html" class="hover:text-purple-500">About Us</a></li>
-                    <li><a href="#" class="hover:text-purple-500">Services</a></li>
-                    <li><a href="#" class="hover:text-purple-500">Contact Us</a></li>
-                </ul>
-            </div>
-
-            <div>
-                <h4 class="text-lg font-semibold mb-4">Services</h4>
-                <ul>
-                    <li><a href="#" class="hover:text-purple-500">Virtual Assistant</a></li>
-                    <li><a href="#" class="hover:text-purple-500">Bookkeeping</a></li>
-                    <li><a href="#" class="hover:text-purple-500">HR Support</a></li>
-                    <li><a href="#" class="hover:text-purple-500">Project Management</a></li>
-                </ul>
-            </div>
-
-            <div>
-                <h4 class="text-lg font-semibold mb-4">Contact Us</h4>
                 <p>123 Main Street, Anytown, USA</p>
+            </div>
+            <div>
+                <h4 class="text-xl font-semibold mb-4">Quick Links</h4>
+                <ul>
+                    <li><a href="/" class="hover:text-gold">Home</a></li>
+                    <li><a href="/about" class="hover:text-gold">About Us</a></li>
+                    <li><a href="#" class="hover:text-gold">Services</a></li>
+                    <li><a href="#" class="hover:text-gold">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-xl font-semibold mb-4">Contact Us</h4>
                 <p>Email: info@test.com</p>
                 <p>Phone: (555) 123-4567</p>
+                <div class="mt-4">
+                    <a href="#" class="text-white hover:text-gold mr-2"><i class="fab fa-facebook fa-lg"></i></a>
+                    <a href="#" class="text-white hover:text-gold mr-2"><i class="fab fa-twitter fa-lg"></i></a>
+                    <a href="#" class="text-white hover:text-gold"><i class="fab fa-linkedin fa-lg"></i></a>
+                </div>
             </div>
         </div>
-        <div class="text-center mt-8">
-            <p>&copy; 2
+        <div class="text-center mt-4">
+            <p>&copy; 2024 test. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            mobileMenuButton.addEventListener('click', function () {
+                mobileMenu.classList.toggle('hidden');
+            });
+        });
+
+        // Basic animation on scroll (Intersection Observer)
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    const animation = entry.target.dataset.animate;
+                    const delay = entry.target.dataset.animationDelay || '0';
+                    entry.target.classList.add('animate__animated', 'animate__' + animation);
+                    entry.target.style.animationDelay = delay + 'ms';
+                    observer.unobserve(entry.target); // Only animate once
+                }
+            });
+        });
+
+        document.querySelectorAll('[data-animate]').forEach(element => {
+            element.classList.add('opacity-0'); // Hide initially
+            observer.observe(element);
+        });
+
+        // Simple fade-in animation class (add animate.css)
+        // You'll need to include animate.css for this to work
+        // <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wE7Jtoni9jpDgSpISA3wZ5JqXnnQYV9s6VTcjdQjoA9QNNKWIQMw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wE7Jtoni9jpDgSpISA3wZ5JqXnnQYV9s6VTcjdQjoA9QNNKWIQMw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</body>
+</html>
       </main>
       
     </body>
